@@ -23,7 +23,9 @@ services:
       - 26000:26000
       - 16000:16000
       - 10809:10809
-      - 67-69:67-69/udp
+      - 67:67/udp
+      - 68:68/udp
+      - 69:69/udp
     volumes:
       - ./app/isos:/app/iso
       - ./app/config:/app/data
