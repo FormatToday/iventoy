@@ -11,11 +11,11 @@ A github actions workflow runs daily to check if their is a new release.
 This does not work with rootless Docker.  The container must be run as root.
 
 ```yaml
----
+
 version: '3.9'
 services:
   iventoy:
-    image:formattoday/iventoy:latest
+    image: formattoday/iventoy:latest
     container_name: iventoy
     restart: always
     privileged: true #must be true
